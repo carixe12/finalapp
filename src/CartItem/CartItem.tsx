@@ -17,7 +17,7 @@ const CartItem: React.FC<Props> = ({ item, addToCart, removeFromCart }) => (
       <div className="information">
         <p> Price: ${item.price}</p>
         
-         <p>Stocks Left: {item.stock * item.price}</p> 
+         <p>Stocks Left: {item.rating.count}</p> 
       </div>
       <div className="buttons">
         <Button
